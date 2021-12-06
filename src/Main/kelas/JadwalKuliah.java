@@ -50,7 +50,7 @@ public class JadwalKuliah {
         System.out.println("= = = = = = = = = = = = = = = = = ");
         System.out.println("Mata Kuliah     |   Alokasi Jam  ");
         System.out.println("= = = = = = = = = = = = = = = = = ");
-        System.out.println("  AOK           |   08.00 - 08.50");
+        System.out.println("  AOl           |   08.00 - 08.50");
         System.out.println("  AOK           |   09.00 - 09.50");
         System.out.println("  PRPL          |   10.00 - 10.50");
         System.out.println("  PRPL          |   11.00 - 11.50");

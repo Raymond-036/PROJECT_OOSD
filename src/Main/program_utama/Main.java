@@ -1,5 +1,6 @@
 package Main.program_utama;
 
+import Main.Abstract.InfoRuanganDriver;
 import Main.kelas.*;
 
 import java.util.Scanner;
@@ -16,14 +17,14 @@ public class Main {
             System.out.println("= = = = = = = = = = = = ");
             System.out.println("=== SELAMAT DATANG ===");
             System.out.println("= = = = = = = = = = = = ");
-            System.out.println("||== MENU UTAMA :  ==||");
+            System.out.println("||- -  MENU UTAMA  - -||");
             System.out.println("1. Info Dosen");
             System.out.println("2. Info Mata Kuliah");
             System.out.println("3. Jadwal Kuliah");
             System.out.println("4. Info Ruangan");
             System.out.println("5. Info Gedung");
             System.out.println("6. Laporan");
-            System.out.println("7. Pengumuman");
+            System.out.println("7. Melihat Pengumuman");
             System.out.println("8. Silabus");
             System.out.println("9. Metode Pembelajaran");
             System.out.println("10. Keluar");
@@ -72,7 +73,18 @@ public class Main {
                     System.exit(0);
                 }
             } else if (aksi.equalsIgnoreCase("4")) {
+                Scanner scanner4 = new Scanner(System.in);
                 /*9. instansiasi kelas InfoRuangan*/
+                System.out.println("Pilihan Anda adalah : " + aksi);
+                InfoRuanganDriver infoRuanganDriver = new InfoRuanganDriver();
+                infoRuanganDriver.tampilInfoRuangan();
+                System.out.print("Apakah anda ingin melihat informasi lagi (y/t)? ");
+
+                String ulang;
+                ulang = scanner4.next();
+                if (ulang.equals("t")) {
+                    System.exit(0);
+                }
 
             } else if (aksi.equalsIgnoreCase("5")) {
                 /*10. instansiasi kelas InfoGedung*/
@@ -87,9 +99,20 @@ public class Main {
                     System.exit(0);
                 }
             } else if (aksi.equalsIgnoreCase("6")) {
+                /*11. instansiasi kelas Laporan*/
 
             } else if (aksi.equalsIgnoreCase("7")) {
+                /*11. instansiasi kelas Pengumuman*/
+                Pengumuman pengumuman = new Pengumuman();
+                System.out.println("Pilihan Anda adalah : " + aksi);
+                pengumuman.infoPengumuman();
+                System.out.print("Apakah anda ingin melihat informasi lagi (y/t)? ");
 
+                String ulang;
+                ulang = scanner.next();
+                if (ulang.equals("t")) {
+                    System.exit(0);
+                }
             } else if (aksi.equalsIgnoreCase("8")) {
 
             } else if (aksi.equalsIgnoreCase("9")) {

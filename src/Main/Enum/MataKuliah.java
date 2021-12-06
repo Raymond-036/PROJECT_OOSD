@@ -1,5 +1,6 @@
 package Main.Enum;
 
 public enum MataKuliah {
-    LOGIN, ALSTRUDAT, SBD, OOSD, ENGLISHIII, PAP, JARKOM;
+    /*set konstanta variable*/
+    LOGIN, ALSTRUDAT, SBD, OOSD, ENGLISHIII, PAP, JARKOM, PEMBENTUKAN_KARAKTER_DEL;
 }

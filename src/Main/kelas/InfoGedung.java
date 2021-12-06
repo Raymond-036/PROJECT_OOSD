@@ -1,24 +1,26 @@
 package Main.kelas;
 
-import Main.Enum.Ruangan;
+import Main.Enum.Gedung;
+import Main.Interface.InterfaceInfoGedung;
 
 import java.util.HashMap;
 import java.util.Map;
 
-public class InfoGedung {
+public class InfoGedung implements InterfaceInfoGedung {
     /*1. set method tampilInfoGedung()*/
 //    public void tampilInfoGedung() {
 //
 //    }
 
     /*main method*/
+    @Override
     public void tampilInfoGedung() {
         /*2. set instansiasi kelas HashMap*/
         HashMap<String, Integer> infoGedung = new HashMap<>();
         /*3. mengisi data ke objek infoGedung*/
         /*infoGedung.put(nama_ruangan, jumlah_ruangan)*/
-        infoGedung.put(Ruangan.GD7.toString(), 8);
-        infoGedung.put(Ruangan.GD5.toString(), 8);
+        infoGedung.put(Gedung.GD7.toString(), 8);
+        infoGedung.put(Gedung.GD5.toString(), 8);
 
         //System.out.println(infoGedung);
         /*4. menampilkan data ke console*/
