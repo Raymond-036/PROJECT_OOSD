@@ -1,11 +1,12 @@
 package Main.program_utama;
 
 import Main.Abstract.InfoRuanganDriver;
+import Main.Abstract.LaporanDriver;
 import Main.kelas.*;
 
 import java.util.Scanner;
 
-public class Main {
+public class  Main {
     /*1. set main method*/
     public static void main(String[] args) {
         /*2. instansiasi kelas Scanner*/
@@ -40,6 +41,7 @@ public class Main {
                 /*6. instansiasi kelas InfoDosenDriver*/
                 InfoDosenDriver infoDosenDriver = new InfoDosenDriver();
                 System.out.println("Pilihan anda adalah : " + aksi);
+                System.out.println();
                 infoDosenDriver.tampilDataDosen();
                 System.out.print("Apakah anda ingin melihat informasi lagi (y/t)? ");
 
@@ -52,6 +54,7 @@ public class Main {
                 /*7. instansiasi kelas InfoMataKuliah*/
                 InfoMataKuliahDriver infoMataKuliahDriver = new InfoMataKuliahDriver();
                 System.out.println("Pilihan anda adalah : " + aksi);
+                System.out.println();
                 infoMataKuliahDriver.tampilInfoMataKuliah();
                 System.out.print("Apakah anda ingin melihat informasi lagi (y/t)? ");
 
@@ -64,6 +67,7 @@ public class Main {
                 /*8. instansiasi kelas JadwalKuliah*/
                 JadwalKuliah jadwalKuliah = new JadwalKuliah();
                 System.out.println("Pilihan anda adalah : " + aksi);
+                System.out.println();
                 jadwalKuliah.tampilJadwalKuliah();
                 System.out.print("Apakah anda ingin melihat informasi lagi (y/t)? ");
 
@@ -76,6 +80,7 @@ public class Main {
                 Scanner scanner4 = new Scanner(System.in);
                 /*9. instansiasi kelas InfoRuangan*/
                 System.out.println("Pilihan Anda adalah : " + aksi);
+                System.out.println();
                 InfoRuanganDriver infoRuanganDriver = new InfoRuanganDriver();
                 infoRuanganDriver.tampilInfoRuangan();
                 System.out.print("Apakah anda ingin melihat informasi lagi (y/t)? ");
@@ -90,6 +95,7 @@ public class Main {
                 /*10. instansiasi kelas InfoGedung*/
                 InfoGedung infoGedung = new InfoGedung();
                 System.out.println("Pilihan anda adalah : " + aksi);
+                System.out.println();
                 infoGedung.tampilInfoGedung();
                 System.out.print("Apakah anda ingin melihat informasi lagi (y/t)? ");
 
@@ -99,12 +105,15 @@ public class Main {
                     System.exit(0);
                 }
             } else if (aksi.equalsIgnoreCase("6")) {
-                /*11. instansiasi kelas Laporan*/
+                /*11. instansiasi kelas LaporanDriver*/
+                LaporanDriver laporanDriver = new LaporanDriver();
+                laporanDriver.tampilLaporan();
 
             } else if (aksi.equalsIgnoreCase("7")) {
                 /*11. instansiasi kelas Pengumuman*/
                 Pengumuman pengumuman = new Pengumuman();
                 System.out.println("Pilihan Anda adalah : " + aksi);
+                System.out.println();
                 pengumuman.infoPengumuman();
                 System.out.print("Apakah anda ingin melihat informasi lagi (y/t)? ");
 
@@ -114,6 +123,7 @@ public class Main {
                     System.exit(0);
                 }
             } else if (aksi.equalsIgnoreCase("8")) {
+
 
             } else if (aksi.equalsIgnoreCase("9")) {
                 Scanner inputUser = new Scanner(System.in);
