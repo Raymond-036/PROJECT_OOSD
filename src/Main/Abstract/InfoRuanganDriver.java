@@ -24,14 +24,18 @@ public class InfoRuanganDriver extends InfoRuangan {
 //            System.out.println("Key: "+map.get Key()+ " Valuenya = "+map.getValue());
 //        }
 
-        System.out.println("= = = = = = = = = = = = = = = = = = = = = = =");
-        System.out.println("Nomor Ruangan       |       Kapasitas       |");
-        System.out.println("= = = = = = = = = = = = = = = = = = = = = = =");
-        for (Map.Entry map : infoRuangan.entrySet()) {
+        try {
+            System.out.println("= = = = = = = = = = = = = = = = = = = = = = =");
+            System.out.println("Nomor Ruangan       |       Kapasitas       |");
+            System.out.println("= = = = = = = = = = = = = = = = = = = = = = =");
+            for (Map.Entry map : infoRuangan.entrySet()) {
 
-            System.out.println("||"+map.getKey() + " \t\t\t\t| " + map.getValue() +"\t\t\t\t\t|");
+                System.out.println("||"+map.getKey() + " \t\t\t\t| " + map.getValue() +"\t\t\t\t\t|");
+            }
+            System.out.println("= = = = = = = = = = = = = = = = = = = = = = =");
+        } catch (Exception error) {
+            error.getMessage();
         }
-        System.out.println("= = = = = = = = = = = = = = = = = = = = = = =");
 
 
 

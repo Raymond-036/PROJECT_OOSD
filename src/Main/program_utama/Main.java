@@ -15,6 +15,7 @@ public class  Main {
         String aksi;
 
         while(true) {
+            System.out.println();
             System.out.println("= = = = = = = = = = = = ");
             System.out.println("=== SELAMAT DATANG ===");
             System.out.println("= = = = = = = = = = = = ");
@@ -39,6 +40,7 @@ public class  Main {
             /*5. menggunakan pengkondisian untuk memfilter inputan user*/
             if(aksi.equalsIgnoreCase("1")) {
                 /*6. instansiasi kelas InfoDosenDriver*/
+                Scanner scanner1 = new Scanner(System.in);
                 InfoDosenDriver infoDosenDriver = new InfoDosenDriver();
                 System.out.println("Pilihan anda adalah : " + aksi);
                 System.out.println();
@@ -46,12 +48,13 @@ public class  Main {
                 System.out.print("Apakah anda ingin melihat informasi lagi (y/t)? ");
 
                 String ulang;
-                ulang = scanner.next();
+                ulang = scanner1.next();
                 if (ulang.equals("t")) {
                     System.exit(0);
                 }
             } else if(aksi.equalsIgnoreCase("2")) {
                 /*7. instansiasi kelas InfoMataKuliah*/
+                Scanner scanner2 = new Scanner(System.in);
                 InfoMataKuliahDriver infoMataKuliahDriver = new InfoMataKuliahDriver();
                 System.out.println("Pilihan anda adalah : " + aksi);
                 System.out.println();
@@ -59,11 +62,12 @@ public class  Main {
                 System.out.print("Apakah anda ingin melihat informasi lagi (y/t)? ");
 
                 String ulang;
-                ulang = scanner.next();
+                ulang = scanner2.next();
                 if (ulang.equals("t")) {
                     System.exit(0);
                 }
             } else if (aksi.equalsIgnoreCase("3")) {
+                Scanner scanner3 = new Scanner(System.in);
                 /*8. instansiasi kelas JadwalKuliah*/
                 JadwalKuliah jadwalKuliah = new JadwalKuliah();
                 System.out.println("Pilihan anda adalah : " + aksi);
@@ -71,8 +75,9 @@ public class  Main {
                 jadwalKuliah.tampilJadwalKuliah();
                 System.out.print("Apakah anda ingin melihat informasi lagi (y/t)? ");
 
+
                 String ulang;
-                ulang = scanner.next();
+                ulang = scanner3.next();
                 if (ulang.equals("t")) {
                     System.exit(0);
                 }
@@ -92,6 +97,7 @@ public class  Main {
                 }
 
             } else if (aksi.equalsIgnoreCase("5")) {
+                Scanner scanner5 = new Scanner(System.in);
                 /*10. instansiasi kelas InfoGedung*/
                 InfoGedung infoGedung = new InfoGedung();
                 System.out.println("Pilihan anda adalah : " + aksi);
@@ -100,7 +106,7 @@ public class  Main {
                 System.out.print("Apakah anda ingin melihat informasi lagi (y/t)? ");
 
                 String ulang;
-                ulang = scanner.next();
+                ulang = scanner5.next();
                 if (ulang.equals("t")) {
                     System.exit(0);
                 }
@@ -110,6 +116,7 @@ public class  Main {
                 laporanDriver.tampilLaporan();
 
             } else if (aksi.equalsIgnoreCase("7")) {
+                Scanner scanner6 = new Scanner(System.in);
                 /*11. instansiasi kelas Pengumuman*/
                 Pengumuman pengumuman = new Pengumuman();
                 System.out.println("Pilihan Anda adalah : " + aksi);
@@ -118,20 +125,34 @@ public class  Main {
                 System.out.print("Apakah anda ingin melihat informasi lagi (y/t)? ");
 
                 String ulang;
-                ulang = scanner.next();
+                ulang = scanner6.next();
                 if (ulang.equals("t")) {
                     System.exit(0);
                 }
             } else if (aksi.equalsIgnoreCase("8")) {
+                Scanner scanner7 = new Scanner(System.in);
+                System.out.println("Pilihan Anda adalah : " + aksi);
 
+                System.out.println();
+                /*12. instansiasi kelas Silabus*/
+                SilabusDriver silabusDriver = new SilabusDriver();
+                //memanggil method tampilSilabusDriver
+                silabusDriver.tampilSilabusDriver();
+                System.out.print("Apakah anda ingin melihat informasi lagi (y/t)? ");
+
+                String ulang;
+                ulang = scanner7.next();
+                if (ulang.equals("t")) {
+                    System.exit(0);
+                }
 
             } else if (aksi.equalsIgnoreCase("9")) {
-                Scanner inputUser = new Scanner(System.in);
+                Scanner scanner8 = new Scanner(System.in);
                 String input;
                 System.out.println("1. Tatap Muka");
                 System.out.println("2. Pembelajaran Jarak Jauh");
                 System.out.print("== MASUKKAN ANGKA : \n");
-                input = inputUser.next();
+                input = scanner8.next();
                 if (input.equalsIgnoreCase("1")) {
                     System.out.println();
                     /*11. instansiasi kelas MetodePembelajaran*/
@@ -140,7 +161,7 @@ public class  Main {
                     System.out.print("Apakah anda ingin melihat informasi lagi (y/t)? ");
 
                     String ulang;
-                    ulang = inputUser.next();
+                    ulang = scanner8.next();
                     if (ulang.equals("t")) {
                         System.exit(0);
                     }
@@ -153,7 +174,7 @@ public class  Main {
                     System.out.print("Apakah anda ingin melihat informasi lagi (y/t)? ");
 
                     String ulang;
-                    ulang = inputUser.next();
+                    ulang = scanner8.next();
                     if (ulang.equals("t")) {
                         System.exit(0);
                     }

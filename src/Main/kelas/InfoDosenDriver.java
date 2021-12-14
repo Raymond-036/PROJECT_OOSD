@@ -13,18 +13,22 @@ public class InfoDosenDriver {
         InfoDosen infoDosenVII = new InfoDosen("Gerry Italiano Wowiling, S.Tr.Kom., M.T.", "0125059003");
         InfoDosen infoDosenVIII = new InfoDosen("Dr. Arnaldo Marulitua Sinaga, ST., M.InfoTech.", "0115017701");
 
-        /*3. Tampilkan data dosen*/
-        System.out.println("= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =");
-        System.out.println("|               Nama  \t\t\t\t\t\t\t|       NIDN        |");
-        System.out.println("= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =");
-        System.out.println("|" + infoDosenI.getNama() + " | "+ infoDosenI.getNidn()+" \t\t|");
-        System.out.println("|" + infoDosenII.getNama() + " \t\t\t| "+ infoDosenII.getNidn()+" \t\t|");
-        System.out.println("|" + infoDosenIII.getNama() + " \t\t\t\t\t| "+ infoDosenIII.getNidn()+" \t\t|");
-        System.out.println("|" + infoDosenIV.getNama() + " \t\t| "+ infoDosenIV.getNidn()+" \t\t|");
-        System.out.println("|" + infoDosenV.getNama() + " \t\t\t\t\t\t| "+ infoDosenV.getNidn()+" \t\t|");
-        System.out.println("|" + infoDosenVI.getNama() + " | "+ infoDosenVI.getNidn()+" \t\t|");
-        System.out.println("|" + infoDosenVII.getNama() + " \t\t| "+ infoDosenVII.getNidn()+" \t\t|");
-        System.out.println("|" + infoDosenVIII.getNama() + " | "+ infoDosenVII.getNidn()+" \t\t|");
-        System.out.println("= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =");
+        try {
+            /*3. Tampilkan data dosen*/
+            System.out.println("= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =");
+            System.out.println("|               Nama  \t\t\t\t\t\t\t|       NIDN        |");
+            System.out.println("= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =");
+            System.out.println("|" + infoDosenI.getNama() + " | "+ infoDosenI.getNidn()+" \t\t|");
+            System.out.println("|" + infoDosenII.getNama() + " \t\t\t| "+ infoDosenII.getNidn()+" \t\t|");
+            System.out.println("|" + infoDosenIII.getNama() + " \t\t\t\t\t| "+ infoDosenIII.getNidn()+" \t\t|");
+            System.out.println("|" + infoDosenIV.getNama() + " \t\t| "+ infoDosenIV.getNidn()+" \t\t|");
+            System.out.println("|" + infoDosenV.getNama() + " \t\t\t\t\t\t| "+ infoDosenV.getNidn()+" \t\t|");
+            System.out.println("|" + infoDosenVI.getNama() + " | "+ infoDosenVI.getNidn()+" \t\t|");
+            System.out.println("|" + infoDosenVII.getNama() + " \t\t| "+ infoDosenVII.getNidn()+" \t\t|");
+            System.out.println("|" + infoDosenVIII.getNama() + " | "+ infoDosenVII.getNidn()+" \t\t|");
+            System.out.println("= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =");
+        } catch (Exception error) {
+            error.getMessage();
+        }
     }
 }
